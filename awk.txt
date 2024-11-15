@@ -1,0 +1,45 @@
+sakshi is good girl
+she is dooing engineering
+in aids dept.
+$ awk '/sakshi/{print}' awk.txt
+sakshi is good girl
+
+NITRO@LAPTOP-TO8M3DJG MINGW64 ~/OneDrive/Desktop/code
+$ awk '{ print $1,$2}' awk.txt
+sakshi is
+she is
+in aids
+
+NITRO@LAPTOP-TO8M3DJG MINGW64 ~/OneDrive/Desktop/code
+$ awk '{printf "%2d|%s\n",length,$0}' awk.txt
+19|sakshi is good girl
+25|she is dooing engineering
+13|in aids dept.
+
+NITRO@LAPTOP-TO8M3DJG MINGW64 ~/OneDrive/Desktop/code
+$ awk '{ if (length > max) max=length}END{print max}' awk.txt
+25
+
+NITRO@LAPTOP-TO8M3DJG MINGW64 ~/OneDrive/Desktop/code
+$ awk 'length>10' awk.txt
+sakshi is good girl
+she is dooing engineering
+in aids dept.
+
+NITRO@LAPTOP-TO8M3DJG MINGW64 ~/OneDrive/Desktop/code
+$ awk 'length>20' awk.txt
+she is dooing engineering
+
+NITRO@LAPTOP-TO8M3DJG MINGW64 ~/OneDrive/Desktop/code
+$ awk 'length($0)>20' awk.txt
+she is dooing engineering
+
+NITRO@LAPTOP-TO8M3DJG MINGW64 ~/OneDrive/Desktop/code
+$
+
+
+
+
+
+
+

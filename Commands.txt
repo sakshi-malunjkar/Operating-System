@@ -1,0 +1,39 @@
+1 $ls
+$ls -a (list hidden file)
+$ls -lh(human readable size)
+
+2 pwd - (print working directory)
+
+3 cat
+    $cat file.txt ( display content)
+    $cat txt.file linux.file ( concatnenate)
+
+4 Redirection 
+
+a) ( > , >>)
+$echo "Hello World " > txt.file  (hello world print hoyil)
+$echo "Hello World" >> txt.file (Append)
+
+b) $ sort < txt.file
+c) pipe(|)
+ $ ls -l|grep ".txt"
+
+5) tr
+  
+$echo "Hello World" | tr 'a-z' 'A-Z'
+$echo "Hello World" | tr -d '0-9'
+
+6) sed
+$echo "Hello World " | sed 's/hello/hie/'
+$sed '2d' txt.txt (delete the 2nd line)
+$sed 's/foo/far//g' txt.txt (Replace foo with far in file)
+
+
+7)grep
+$ grep "Hello" txt.txt(find hello in file)
+$ grep -i "hello" txt.txt(find hello in file case insensitive)
+$ grep -r "hello" ./ (find it in all files)
+
+8)
+$ egrep "hello|world" txt.txt
+$ egrep "^[A-za-Z]" txt.file (Scearch for line with starting alphabatical)
